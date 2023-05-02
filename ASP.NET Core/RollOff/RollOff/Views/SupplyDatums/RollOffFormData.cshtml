@@ -1,0 +1,126 @@
+﻿@model RollOff.Models.Roll
+
+@{
+    ViewData["Title"] = "RollOffFormData";
+}
+
+<h1>RollOffFormData</h1>
+
+<h4>Roll</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="RollOffFormData">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EmployeeNo" class="control-label"></label>
+                <input asp-for="EmployeeNo" class="form-control" />
+                <span asp-validation-for="EmployeeNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocalGrade" class="control-label"></label>
+                <input asp-for="LocalGrade" class="form-control" />
+                <span asp-validation-for="LocalGrade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrimarySkill" class="control-label"></label>
+                <input asp-for="PrimarySkill" class="form-control" />
+                <span asp-validation-for="PrimarySkill" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectCode" class="control-label"></label>
+                <input asp-for="ProjectCode" class="form-control" />
+                <span asp-validation-for="ProjectCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectName" class="control-label"></label>
+                <input asp-for="ProjectName" class="form-control" />
+                <span asp-validation-for="ProjectName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practice" class="control-label"></label>
+                <input asp-for="Practice" class="form-control" />
+                <span asp-validation-for="Practice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RollOffEndDate" class="control-label"></label>
+                <input asp-for="RollOffEndDate" class="form-control" />
+                <span asp-validation-for="RollOffEndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReasonForRollOff" class="control-label"></label>
+                <input asp-for="ReasonForRollOff" class="form-control" />
+                <span asp-validation-for="ReasonForRollOff" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThisReleaseNeedsBackfillIsBackfilled" class="control-label"></label>
+                <input asp-for="ThisReleaseNeedsBackfillIsBackfilled" class="form-control" />
+                <span asp-validation-for="ThisReleaseNeedsBackfillIsBackfilled" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PerformanceIssue" class="control-label"></label>
+                <input asp-for="PerformanceIssue" class="form-control" />
+                <span asp-validation-for="PerformanceIssue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resigned" class="control-label"></label>
+                <input asp-for="Resigned" class="form-control" />
+                <span asp-validation-for="Resigned" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnderProbation" class="control-label"></label>
+                <input asp-for="UnderProbation" class="form-control" />
+                <span asp-validation-for="UnderProbation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LongLeave" class="control-label"></label>
+                <input asp-for="LongLeave" class="form-control" />
+                <span asp-validation-for="LongLeave" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TechnicalSkills" class="control-label"></label>
+                <input asp-for="TechnicalSkills" class="form-control" />
+                <span asp-validation-for="TechnicalSkills" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Communication" class="control-label"></label>
+                <input asp-for="Communication" class="form-control" />
+                <span asp-validation-for="Communication" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RoleCompetencies" class="control-label"></label>
+                <input asp-for="RoleCompetencies" class="form-control" />
+                <span asp-validation-for="RoleCompetencies" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Remarks" class="control-label"></label>
+                <input asp-for="Remarks" class="form-control" />
+                <span asp-validation-for="Remarks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RelevantExperienceYrs" class="control-label"></label>
+                <input asp-for="RelevantExperienceYrs" class="form-control" />
+                <span asp-validation-for="RelevantExperienceYrs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+<div>
+    <a asp-action="RollOff">Back to Roll-off</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

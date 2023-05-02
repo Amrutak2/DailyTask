@@ -1,0 +1,132 @@
+﻿@model RollOff.Models.Roll
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Roll</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EmployeeNo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmployeeNo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LocalGrade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LocalGrade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PrimarySkill)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PrimarySkill)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProjectCode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProjectCode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProjectName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Practice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Practice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RollOffEndDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RollOffEndDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ReasonForRollOff)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ReasonForRollOff)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ThisReleaseNeedsBackfillIsBackfilled)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ThisReleaseNeedsBackfillIsBackfilled)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PerformanceIssue)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PerformanceIssue)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Resigned)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Resigned)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UnderProbation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UnderProbation)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LongLeave)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LongLeave)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TechnicalSkills)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TechnicalSkills)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Communication)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Communication)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RoleCompetencies)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RoleCompetencies)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Remarks)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Remarks)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RelevantExperienceYrs)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RelevantExperienceYrs)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.EmployeeNo">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

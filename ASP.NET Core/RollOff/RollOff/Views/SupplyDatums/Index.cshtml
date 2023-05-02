@@ -1,0 +1,149 @@
+﻿@model IEnumerable<RollOff.Models.SupplyDatum>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@*<h1>Index</h1>*@
+
+@*<p>
+        <a asp-action="Create">Create New</a>
+    </p>*@
+<form method="get" asp-action="Index">
+    <p>
+        <input type="search" placeholder="Enter Global group Id or Employee Name or Email" value="@ViewData["GetDetails"]"
+               name="EmpSearch" style="width:500px;" />
+        <input type="submit" value="Search" class="btn btn-primary" />
+        <a asp-action="Index">Back to list</a>
+    </p>
+</form>
+<div class="container ml-0 p-0 d-inline-block" style="width:60vw; height:60vh; overflow:scroll;">
+    
+        <table class="table-sm" >
+            <thead class="sticky-top bg-dark text-light ">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Country)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.GlobalGroupId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EmployeeNo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LocalGrade)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MainClient)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.JoiningDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProjectCode)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProjectName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProjectStartDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProjectEndDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PeopleManagerPerformanceReviewer)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Practice)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PspName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NewGlobalPractice)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OfficeCity)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Country)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.GlobalGroupId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmployeeNo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LocalGrade)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MainClient)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.JoiningDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProjectCode)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProjectName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProjectStartDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProjectEndDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PeopleManagerPerformanceReviewer)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Practice)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PspName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NewGlobalPractice)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OfficeCity)
+                        </td>
+                        <td>
+                            @*<a asp-action="Edit" asp-route-id="@item.GlobalGroupId">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.GlobalGroupId">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@item.GlobalGroupId">Delete</a> |*@
+                            <a asp-controller="Rolls" asp-action="Create" asp-route-id="@item.GlobalGroupId">RollOff</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+ 
+    </div>
+@*<div class="container ml-0 p-0 d-inline-block" style="width: 30vw;">
+    <h1>Requests</h1>
+</div>*@
+   

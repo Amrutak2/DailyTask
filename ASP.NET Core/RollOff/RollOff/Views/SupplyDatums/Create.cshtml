@@ -1,0 +1,113 @@
+﻿@model RollOff.Models.SupplyDatum
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+@*<h4>SupplyDatum</h4>*@
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Country" class="control-label"></label>
+                <input asp-for="Country" class="form-control" />
+                <span asp-validation-for="Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GlobalGroupId" class="control-label"></label>
+                <input asp-for="GlobalGroupId" class="form-control" />
+                <span asp-validation-for="GlobalGroupId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmployeeNo" class="control-label"></label>
+                <input asp-for="EmployeeNo" class="form-control" />
+                <span asp-validation-for="EmployeeNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LocalGrade" class="control-label"></label>
+                <input asp-for="LocalGrade" class="form-control" />
+                <span asp-validation-for="LocalGrade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MainClient" class="control-label"></label>
+                <input asp-for="MainClient" class="form-control" />
+                <span asp-validation-for="MainClient" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JoiningDate" class="control-label"></label>
+                <input asp-for="JoiningDate" class="form-control" />
+                <span asp-validation-for="JoiningDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectCode" class="control-label"></label>
+                <input asp-for="ProjectCode" class="form-control" />
+                <span asp-validation-for="ProjectCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectName" class="control-label"></label>
+                <input asp-for="ProjectName" class="form-control" />
+                <span asp-validation-for="ProjectName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectStartDate" class="control-label"></label>
+                <input asp-for="ProjectStartDate" class="form-control" />
+                <span asp-validation-for="ProjectStartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectEndDate" class="control-label"></label>
+                <input asp-for="ProjectEndDate" class="form-control" />
+                <span asp-validation-for="ProjectEndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PeopleManagerPerformanceReviewer" class="control-label"></label>
+                <input asp-for="PeopleManagerPerformanceReviewer" class="form-control" />
+                <span asp-validation-for="PeopleManagerPerformanceReviewer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Practice" class="control-label"></label>
+                <input asp-for="Practice" class="form-control" />
+                <span asp-validation-for="Practice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PspName" class="control-label"></label>
+                <input asp-for="PspName" class="form-control" />
+                <span asp-validation-for="PspName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewGlobalPractice" class="control-label"></label>
+                <input asp-for="NewGlobalPractice" class="form-control" />
+                <span asp-validation-for="NewGlobalPractice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OfficeCity" class="control-label"></label>
+                <input asp-for="OfficeCity" class="form-control" />
+                <span asp-validation-for="OfficeCity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
