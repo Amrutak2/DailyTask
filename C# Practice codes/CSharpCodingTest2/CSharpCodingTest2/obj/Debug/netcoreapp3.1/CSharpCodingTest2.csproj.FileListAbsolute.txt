@@ -1,0 +1,14 @@
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\bin\Debug\netcoreapp3.1\CSharpCodingTest2.exe
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\bin\Debug\netcoreapp3.1\CSharpCodingTest2.deps.json
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\bin\Debug\netcoreapp3.1\CSharpCodingTest2.runtimeconfig.json
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\bin\Debug\netcoreapp3.1\CSharpCodingTest2.runtimeconfig.dev.json
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\bin\Debug\netcoreapp3.1\CSharpCodingTest2.dll
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\bin\Debug\netcoreapp3.1\CSharpCodingTest2.pdb
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\obj\Debug\netcoreapp3.1\CSharpCodingTest2.csproj.AssemblyReference.cache
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\obj\Debug\netcoreapp3.1\CSharpCodingTest2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\obj\Debug\netcoreapp3.1\CSharpCodingTest2.AssemblyInfoInputs.cache
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\obj\Debug\netcoreapp3.1\CSharpCodingTest2.AssemblyInfo.cs
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\obj\Debug\netcoreapp3.1\CSharpCodingTest2.csproj.CoreCompileInputs.cache
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\obj\Debug\netcoreapp3.1\CSharpCodingTest2.dll
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\obj\Debug\netcoreapp3.1\CSharpCodingTest2.pdb
+C:\Users\AMRUTAMK\Documents\C# Practice codes\CSharpCodingTest2\CSharpCodingTest2\obj\Debug\netcoreapp3.1\CSharpCodingTest2.genruntimeconfig.cache

@@ -1,0 +1,96 @@
+Write C# code for largest of 3 numbers:
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int n1, n2, n3;
+        Console.WriteLine("Enter three numbers: ");
+        n1 = Convert.ToInt32(Console.ReadLine());
+        n2 = Convert.ToInt32(Console.ReadLine());
+        n3 = Convert.ToInt32(Console.ReadLine());
+        if(n1>n2 && n1>n3){
+            Console.WriteLine(n1+" is Largest");
+        }
+        else if(n2>n1 && n2>n3){
+            Console.WriteLine(n2+" is Largest");
+        }
+        else{
+            Console.WriteLine(n3 +" is Largest");
+        }
+    }
+}
+
+---------------------------------------------------------------------------------------------------------
+operation program for 2 numbers using switch:
+
+using System;
+
+public class MyClass
+{
+    public static void Main(string[] args)
+    {
+        int n1, n2;
+        Console.WriteLine("Enter any two numbers: ");
+        n1 = Convert.ToInt32(Console.ReadLine());
+        n2 = Convert.ToInt32(Console.ReadLine());
+        int op, sum, subs, mul, div;
+        sum = n1+n2;
+        subs = n1-n2;
+        mul = n1*n2;
+        div = n1/n2;
+        Console.WriteLine("Enter your choice: ");
+        op = Convert.ToInt32("Enter operation to perform: ");
+        switch(op){
+            case sum:
+            //res = n1+n2;
+            Console.WriteLine("Addition: "+sum);
+            break;
+            case subs:
+            //res = n1-n2;
+            Console.WriteLine("Substraction: "+subs);
+            break;
+            case mul:
+            //res = n1*n2;
+            Console.WriteLine("Multiplication: "+mul);
+            break;
+            case div:
+            //res = n1/n2;
+            Console.WriteLine("Divison: "+div);
+            break;
+            default:
+            Console.WriteLine("Invalid");
+            break;
+        }
+        // res = n1+n2;
+        // Console.WriteLine("Addition: "+res);
+        // res = n1-n2;
+        // Console.WriteLine("Substraction: "+res);
+        // res = n1*n2;
+        // Console.WriteLine("Multiplication: "+res);
+        // res = n1/n2;
+        // Console.WriteLine("Divison: "+res);
+    }
+}
+
+---------------------------------------------------------------------------
+Fibonacci series
+
+using System;
+public class Myclass{
+    public static void Main(string[] args){
+        int n1=0, n2=1,n3,i,number;
+        Console.WriteLine("Enter the number of elements:");
+        number = int.Parse(Console.ReadLine());
+        Console.Write(n1+" "+n2+" ");
+        for(i=2;i<number;++i){
+            n3 = n1+n2;
+            Console.Write(n3+" ");
+            n1 = n2;
+            n2 = n3;
+        }
+    }
+}
+------------------------------------------------------------------------------
